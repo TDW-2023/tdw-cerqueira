@@ -41,7 +41,7 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-      <Link href="/pages">
+      <Link href="/nova">
           <h2>
             Nova Página <span>-&gt;</span>
           </h2>
