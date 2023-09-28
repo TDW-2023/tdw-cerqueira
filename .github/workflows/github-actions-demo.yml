@@ -6,5 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: npx prettier . --check
+      - run: npm test
       - run: npm ci
       - run: npm run lint
