@@ -1,6 +1,7 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
+import styles from "./page.module.css"
+import React from "react";
 
 export default function Home() {
   return (
@@ -41,7 +42,7 @@ export default function Home() {
           <h2>
             Nova Página <span>-&gt;</span>
           </h2>
-          <p>OLA!!! </p>
+          <p role="beleza">O Cerqueira é lindo!</p>
         </Link>
 
         <a
