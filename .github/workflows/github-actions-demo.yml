@@ -8,6 +8,6 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install
       - run: npx prettier . --check
-      - run: npm test
+      - run: npm run test
       - run: npm ci
       - run: npm run lint
