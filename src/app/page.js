@@ -1,6 +1,6 @@
-import Image from 'next/image'
-import styles from './page.module.css'
-import Link from 'next/link'
+import Image from "next/image";
+import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,12 +11,8 @@ export default function Home() {
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
-          <a
-            href="#"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            By{" "}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
@@ -41,12 +37,12 @@ export default function Home() {
       </div>
 
       <div className={styles.grid}>
-      <Link href="/nova">
+        <Link href="/nova">
           <h2>
             Nova Página <span>-&gt;</span>
           </h2>
           <p>OLA!!! </p>
-          </Link>
+        </Link>
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
@@ -87,5 +83,5 @@ export default function Home() {
         </a>
       </div>
     </main>
-  )
+  );
 }
