@@ -1,19 +1,19 @@
-import Image from "next/image";
-import Link from "next/link";
-import styles from "./page.module.css";
-import React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import styles from './page.module.css';
+import React from 'react';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get ready by editing&nbsp;
+          Get alright by editing&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
           <a href="#" target="_blank" rel="noopener noreferrer">
-            By{" "}
+            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"

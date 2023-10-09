@@ -1,24 +1,21 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: ['master']
   pull_request:
-    branches: ['master']
+    branches: ['main', 'nova-pagina']
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: npm install
-    - run: npx prettier . --check
-    - run: npx prettier . --write
-    - run: npm run test
-    - run: npm run lint
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm install
+      - run: npx prettier . --check
+      - run: npm run test
+      - run: npm run lint

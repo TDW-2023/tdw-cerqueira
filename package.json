@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest, babel-node sum.test.js"
+    "test": "jest"
   },
   "dependencies": {
     "eslint": "8.49.0",
