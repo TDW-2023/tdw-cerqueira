@@ -1,8 +1,6 @@
 name: Node.js CI
 
 on:
-  push:
-    branches: ['main', 'nova-pagina']
   pull_request:
     branches: ['main', 'nova-pagina']
 
