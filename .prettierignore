@@ -33,6 +33,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+github-actions-demo.yml
 .babelrc
 jest.config.js
 sum.js
