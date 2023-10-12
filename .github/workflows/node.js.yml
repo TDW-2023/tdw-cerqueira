@@ -20,3 +20,17 @@ jobs:
       - run: npm run test
       - run: npx prettier . --check
       - run: npm run lint
+
+  production-deploy:
+    if: github.repository == 'main' && ${{ success() }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: deploy
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm run build
+
