@@ -13,6 +13,7 @@ export default function Nova() {
           width={100}
           height={100}
         ></Image>
+        <p>teste2</p>
       </Link>
     </div>
   );
