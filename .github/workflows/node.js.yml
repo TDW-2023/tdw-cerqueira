@@ -22,7 +22,7 @@ jobs:
       - run: npm run lint
 
   production-deploy:
-    if: github.repository == 'main' && ${{ success() }}
+    if: github.repository == 'main' && ${{ contains(join(needs.*.result, ','), 'success') }}
     runs-on: ubuntu-latest
 
     steps:
