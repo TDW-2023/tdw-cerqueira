@@ -42,7 +42,7 @@ export default function Home() {
           <h2>
             Nova Página <span>-&gt;</span>
           </h2>
-          <p role="beleza">O dinis é lindo!</p>
+          <p role="beleza">O Cerqueira é lindo!</p>
         </Link>
 
         <a
