@@ -23,9 +23,9 @@ jobs:
 
   production-deploy:
     runs-on: ubuntu-latest
-    if: github.repository == 'main' && contains(join(needs.*.result, ','), 'success')
+    if: github.repository == 'main'
     needs: [build]
-    
+
     steps:
       - uses: actions/checkout@v3
       - name: deploy
