@@ -5,7 +5,7 @@ on:
     branches: ['main', 'nova-pagina']
 
 jobs:
-  build:
+  bob:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,8 +23,8 @@ jobs:
 
   production-deploy:
     runs-on: ubuntu-latest
-    if: github.repository == 'main'
-    needs: [build]
+    if: github.event_name == 'pull_request' && github.event.pull_request.base.ref == 'main'
+    needs: [bob]
 
     steps:
       - uses: actions/checkout@v3
